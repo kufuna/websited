@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+
+	<div id="project_1">
+
+		<div id="pr_1_body">
+
+			<div id="pr_1_loader"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+			<div id="pr_1_left_side">
+
+				<div class="section pr_1_l_sct">
+
+					<div id="pr_1_logo">PLJ-</div>
+
+					<div id="pr_1_slide">
+					
+						<div id="pr_1_counter">
+							<div id="pr_1_active_s_n">01</div>
+							<div id="pr_1_s_st">
+								<div id="pr_1_s_a_st"></div>
+							</div>
+							<div id="pr_1_sl_len">04</div>
+						</div>
+
+						<div id="pr_1_img_slide">
+							<div class="pr_1_img pr_1_img_4"></div>
+							<div class="pr_1_img pr_1_img_3"></div>
+							<div class="pr_1_img pr_1_img_2"></div>
+							<div class="pr_1_img pr_1_img_1"></div>
+						</div>
+
+					</div>
+
+					<div id="pr_1_footer">
+						<a href="">FAQ</a>
+						<a href="">Help</a>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div id="pr_1_right_side">
+
+				<div class="section pr_1_r_sct">
+					
+					<div id="pr_1_article">
+						<p class="pr_1_p1">EDITORIAL</p>
+						<p class="pr_1_p2">Our Story</p>
+						<p class="pr_1_p3">read the story of four girls who have <br> carved out their space in the world</p>
+						<p class="pr_1_p4"><a href="">READ THE FULL STORY</a></p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		var count = 2;
+
+		function change() {
+			$('#pr_1_active_s_n').text('0' + count);
+			$('.pr_1_img').removeClass('active');
+			$('.pr_1_img_' + count).addClass('active');
+			count++;
+			if (count == 5) {
+				count = 1;
+			}
+		}
+
+		setTimeout(function() {
+
+			setInterval(change,2000);
+
+		}, 2000);
+
+	})
+
+</script>
+</body>
+</html>
